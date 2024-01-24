@@ -4,8 +4,6 @@ let menTabEl = document.getElementById("menTab");
 let womenTabEl = document.getElementById("womenTab");
 let kidsTabEl = document.getElementById("kidsTab");
 
-
-
 function createAndAppendProductCard(product) {
     // console.log(product);
     let {id, image, title, vendor, price, compare_at_price, badge_text, second_image } = product;
@@ -27,8 +25,6 @@ function createAndAppendProductCard(product) {
         badgeTextEl.textContent = badge_text;
         productCard.appendChild(badgeTextEl);
     }
-
-    
 
     let headersEl = document.createElement("div");
     headersEl.classList.add("headers-container");
@@ -71,7 +67,6 @@ function createAndAppendProductCard(product) {
 
     return productCard
 }
-
 
 function displayProducts(categoryName, categories) {
     productContainerEl.innerHTML = "";
